@@ -1,0 +1,80 @@
+/*
+ * Animation
+ */
+
+@keyframes flow {
+  40% {
+    transform: translate(400%);
+    opacity: 0;
+  }
+
+  40.05% {
+    transform: translate(-400%);
+  }
+
+  40.1% {
+    opacity: 0;
+  }
+
+  80% {
+    transform: translate(50%) rotate(10deg);
+    opacity: 1;
+  }
+
+  100% {
+    transform: translate(0%) rotate(0deg);
+  }
+}
+
+/*
+ * CSS
+ */
+
+body {
+  background-color: #1B1B1B;
+}
+
+main img {
+  width: 100%;
+  height: auto;
+  border-radius: 21px 21px 21px 21px;
+}
+
+main iframe {
+  width: 100%;
+  height: 100%;
+  border-radius: 21px 21px 21px 21px;
+}
+
+footer h5 {
+  color: #B9A07A;
+}
+
+.logo {
+  display: block;
+  margin: 0 auto;
+  width: auto;
+  height: auto;
+  animation-name: flow;
+  animation-delay: 500ms;
+  animation-duration: 1s;
+  animation-iteration-count: 1;
+}
+
+.lead {
+  color: #B9A07A
+}
+
+.flex-equal>* {
+  flex: 1;
+}
+
+@media (min-width: 768px) {
+  .bd-placeholder-img-lg {
+    font-size: 3.5rem;
+  }
+
+  .flex-md-equal>* {
+    flex: 1;
+  }
+}
